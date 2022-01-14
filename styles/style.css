@@ -44,30 +44,31 @@ nav li{
 a{
     text-decoration: none;
     font-size: 1.3em;
+    color: #000000;
+    transition: 0.5s;
 }
 
 a:hover{
     text-shadow: 0px 2px #ffffff;
-    transition: 1s;
-    transform: scale(1.5);
 }
 
 a:visited{
-    color: black;
+    color: none;
+}
+
+.link-verde{
+    color: #5d9b5d;
 }
 
 main{
-    width: 940px;
     
-    margin: 0 auto;
 }
 
 .boas-vindas{
-    width: 500px;
-    background: white;
+    width: 940px;
     margin: 0 auto;
+    background: white;
     padding: 60px 0 100px 0;
-    border-bottom: 1px solid gold;
 }
 
 .circulo{
@@ -105,12 +106,28 @@ main{
     font-size: 2em;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
+    cursor: default;
 }
 
 
 .luz{
+    width: 100%;
+    /* border-bottom: 1px solid gold; */
+}
+
+.luz-conteudo{
+    width: 940px;
+    margin: 0 auto;
     padding: 50px 0;
-    border-bottom: 1px solid gold;
+    /* border: 1px solid green; */
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.luz-conteudo:hover{
+    transform: scale(1.05);
+    /* box-shadow: 0 0 20px #dcdcdc; */
+    box-shadow: 0 0 20px #baffa2;
 }
 
 .titulo-luz{
@@ -121,7 +138,7 @@ main{
 }
 
 .caixa-imagem{
-    width: 50%;
+    width: 20%;
     margin: 0 auto;
 }
 
@@ -134,24 +151,48 @@ main{
 }
 
 .sombras{
+    width: 100%;
+    background: black;
+    color: #ffffff;
+    border-bottom: 1px solid #910000;
+}
+
+.sombras-conteudo{
+    width: 940px;
+    margin: 20px auto;
     padding: 50px 0;
+    /* background-color: #000000; */
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.sombras-conteudo:hover{
+    margin: 30px auto;
+    transform: scale(1.05);
 }
 
 .titulo-sombras{
-    color: #000000;
+    color: #760000;
     border-radius: 20px;
     padding: 15px;
     margin: 0 0 30px 0;
+    transition: 200ms;
 }
 
 .sombras img{
     width: 100%;
 }
 
+.titulo-sombras:hover{
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff1e1e;
+}
+
 footer{
     text-align: center;
     width: 100%;
-    background-color: #000000;
+    background-color: #020202;
     padding: 20px;
     box-sizing: border-box;
     color: #ffffff;
