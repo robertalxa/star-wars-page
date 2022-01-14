@@ -1,0 +1,163 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2, a{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+header{
+    background-color: gold;
+    padding: 20px 0;
+}
+
+.caixa{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo{
+    width: 150px;
+}
+
+.logo img{
+    width: 100%;
+    transition: 1s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+nav{
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+a:hover{
+    text-shadow: 0px 2px #ffffff;
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+a:visited{
+    color: black;
+}
+
+main{
+    width: 940px;
+    
+    margin: 0 auto;
+}
+
+.boas-vindas{
+    width: 500px;
+    background: white;
+    margin: 0 auto;
+    padding: 60px 0 100px 0;
+    border-bottom: 1px solid gold;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.mensagem{
+    font-family: 'Alfa Slab One', cursive;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bolder;
+    transition: 1s;
+    position: absolute;
+    text-align: center;
+    width: 350px;
+}
+
+.circulo:hover{
+    /* border: 3px solid rgb(250, 238, 168); */
+    background: rgb(255, 247, 204);
+    transform: scale(1.2);
+    box-shadow: 100px 60px rgba(238, 123, 0, 0.548);
+}
+
+.titulo-principal{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+.luz{
+    padding: 50px 0;
+    border-bottom: 1px solid gold;
+}
+
+.titulo-luz{
+    color: #000000;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 0 0 30px 0;
+}
+
+.caixa-imagem{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.luz img{
+    width: 100%;
+}
+
+.texto{
+    margin: 40px;
+}
+
+.sombras{
+    padding: 50px 0;
+}
+
+.titulo-sombras{
+    color: #000000;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 0 0 30px 0;
+}
+
+.sombras img{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+footer img{
+    width: 150px;
+    margin-bottom: 20px;
+}
