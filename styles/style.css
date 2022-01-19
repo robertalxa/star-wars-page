@@ -3,22 +3,29 @@ body{
 }
 
 h1,h2, a{
-    font-family: 'Alfa Slab One', cursive;
+    font-weight: bold;
 }
 
 header{
     background-color: gold;
     padding: 20px 0;
+    width: 100%;
 }
 
 .caixa{
-    width: 940px;
+    width: 80%;
     margin: 0 auto;
-    position: relative;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: 1s;
 }
 
 .logo{
     width: 150px;
+    max-width: 200px;
 }
 
 .logo img{
@@ -31,9 +38,6 @@ header{
 }
 
 nav{
-    position: absolute;
-    top: 35px;
-    right: 0;
 }
 
 nav li{
@@ -60,6 +64,20 @@ a:visited{
     color: #5d9b5d;
 }
 
+.titulo-principal{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    cursor: default;
+}
+
+.titulo-secundario{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    cursor: default;
+}
+
 footer{
     text-align: center;
     width: 100%;
@@ -73,3 +91,13 @@ footer img{
     width: 150px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width:620px) {
+    .caixa{
+        width: 100%;
+        justify-content: center
+    }
+    nav{
+        display: none;
+    }
+};

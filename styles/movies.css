@@ -1,0 +1,134 @@
+:root{
+    --verde-fundo:#809b5d
+}
+
+header{
+    background: #ffffff;
+}
+
+.secao-intro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-intro{
+    width: 50%;
+    height: 680%;
+}
+
+.img-banner-intro{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 0 10px 10px 0;
+    transition: 1s;
+}
+
+.text-box{
+    position: absolute;
+    width: 45%;
+    height: 35vh;
+    max-height: 250px;
+    background: var(--verde-fundo);
+    padding: 30px 40px;
+    vertical-align: top;
+    left: 40%;
+    font-family: 'Montserrat', sans-serif;
+    color: #e1e1e1;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.text-box:hover{
+    box-shadow: 10px 10px #e1e1e1;
+}
+
+.box-title{
+    font-family: 'star-wars-logo', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+.resumo{
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.primeira-trilogia{
+    width: 940px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    /* background: url('/img/movies/banner-prequel-2.jpg'); */
+    box-sizing: border-box;
+}
+
+.titulo-prequel{
+    width: 50%;
+    background: #ffffff;
+    padding: 20px 0;
+    /* opacity: 0.7; */
+    border-bottom: 1px solid #aaaaaa;
+    margin: 0 auto;
+    transition: 3s;
+}
+
+.titulo-prequel:hover{
+    width: 80%;
+}
+
+.filmes-prequel{
+    width: 100%;
+    background: #ffffff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* opacity: 0.7; */
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filme{
+    width: 25%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.filme:hover{
+    transform: scale(1.1);
+}
+
+.capa{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:840px) {
+    .img-banner-intro{
+        width: 100%;
+    }
+    .text-box{
+        height: 5em;
+        padding: 0;
+    }
+    .resumo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:620px) {
+
+    .img-banner-intro{
+        width: 100%;
+    }
+    .text-box{
+        display: none;
+        
+    }
+    .resumo{
+        display: none;
+    }
+}

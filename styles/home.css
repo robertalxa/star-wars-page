@@ -1,6 +1,6 @@
 
 .boas-vindas{
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
     background: white;
     padding: 60px 0 100px 0;
@@ -37,21 +37,13 @@
     box-shadow: 100px 60px rgba(238, 123, 0, 0.548);
 }
 
-.titulo-principal{
-    font-size: 2em;
-    text-align: center;
-    font-family: 'Alfa Slab One', cursive;
-    cursor: default;
-}
-
-
 .luz{
     width: 100%;
     /* border-bottom: 1px solid gold; */
 }
 
 .luz-conteudo{
-    width: 940px;
+    width: 90%;
     margin: 0 auto;
     padding: 50px 0;
     /* border: 1px solid green; */
@@ -93,7 +85,7 @@
 }
 
 .sombras-conteudo{
-    width: 940px;
+    width: 90%;
     margin: 20px auto;
     padding: 50px 0;
     /* background-color: #000000; */
