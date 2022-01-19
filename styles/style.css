@@ -39,7 +39,7 @@ header{
 
 .lista{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -108,6 +108,9 @@ footer img{
     .caixa{
         width: 100%;
         justify-content: center;
+        flex-direction: column;
+    }
+    .lista{
         flex-direction: column;
     }
     .optsNav{
