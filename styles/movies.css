@@ -1,11 +1,14 @@
 :root{
-    --verde-fundo:#809b5d
+    --verde-fundo:#809b5d;
+    --azul-fundo:#469bc8;
+    --cinza-claro:#e1e1e1;
 }
 
 header{
     background: #ffffff;
 }
 
+/* Início seção intro */
 .secao-intro{
     width: 100%;
     display: flex;
@@ -34,19 +37,20 @@ header{
     vertical-align: top;
     left: 40%;
     font-family: 'Montserrat', sans-serif;
-    color: #e1e1e1;
+    color: var(--cinza-claro);
     transition: 0.5s;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 0.95;
 }
 
 .green-box:hover{
-    box-shadow: 10px 10px #e1e1e1;
+    box-shadow: 10px 10px var(--cinza-claro);
 }
 
-.box-title{
+.titulo-medio{
     font-family: 'star-wars-logo', sans-serif;
     font-size: 2em;
     font-weight: bold;
@@ -58,57 +62,113 @@ header{
     line-height: 1.5em;
     text-align: justify;
 }
+/* Fim seção intro */
 
-.primeira-trilogia{
-    width: 940px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.titulo-prequel{
-    width: 50%;
-    background: #ffffff;
-    padding: 20px 0;
-    /* opacity: 0.7; */
-    border-bottom: 1px solid #aaaaaa;
-    margin: 0 auto;
-    transition: 3s;
-}
-
-.titulo-prequel:hover{
-    width: 80%;
-}
-
-.filmes-prequel{
+/* Início segunda seção */
+.detalhes{
     width: 100%;
-    background: #ffffff;
-    padding: 30px 20px;
+    display: flex;
+    height: 500px;
+    padding: 20px;
+    align-items: center;
     box-sizing: border-box;
-    /* opacity: 0.7; */
-    border-radius: 0 0 5px 5px;
+    margin: 100px 0 0px 0;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, var(--verde-fundo) 50%, var(--verde-fundo) 100%);
+}
+
+.caixa-img-detalhe-1{
+    width: 30%;
+    min-width: 230px;
+    position: absolute;
+    right: 1%;
+}
+
+.img-detalhe-1{
+    width: 100%;
+}
+
+.caixa-img-detalhe-2{
+    width: 40%;
+    min-width: 400px;
+    position: absolute;
+    right: 25%;
+    margin: 20% 0 0 0;
+}
+
+.img-detalhe-2{
+    width: 100%;
+}
+
+.box-detalhes{
+    position: absolute;
+    width: 35%;
+    height: 35vh;
+    max-height: 250px;
+    background: white;
+    color: var(--verde-fundo);
+    padding: 30px 40px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    opacity: 0.95;
+    margin: 0 0 10% 0;
+    left: 10%;
+    border: 1px solid var(--verde-fundo);
 }
 
-.filme{
-    width: 25%;
-    border-radius: 10px;
-    transition: 0.3s;
+.box-detalhes:hover{
+    box-shadow: 10px 10px #e1e1e1;
 }
+/* Fim da segunda seção */
 
-.filme:hover{
-    transform: scale(1.1);
-}
-
-.capa{
+/* Início sessão final */
+.final{
     width: 100%;
-    border-radius: 10px;
+    background: var(--verde-fundo);
+    padding: 200px 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 1s;
 }
+
+.titulo-final{
+    color: var(--cinza-claro);
+    margin: 20px auto;
+}
+
+.imagens-final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+
+.caixa-img-final{
+    width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: 00.5s;
+}
+
+.caixa-img-final:hover{
+    transform: scale(1.2);
+}
+
+.img-final{
+    width: 100%;
+}
+
+/* Fim sessão final */
 
 @media screen and (max-width:620px) {
+    .secao-intro{
+        margin: 100px auto;
+    }
     .banner-intro{
         width: 80%;
     }
@@ -128,5 +188,8 @@ header{
     }
     .resumo{
         display: none;
+    }
+    .final{
+        padding: 50px 3%;
     }
 }
