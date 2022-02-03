@@ -1,0 +1,54 @@
+:root{
+    --verde-fundo:#809b5d;
+    --azul-fundo:#469bc8;
+    --cinza-claro:#e1e1e1;
+}
+
+header{
+    background: var(--verde-fundo);
+}
+
+.texto-branco{
+    color: #ffffff;
+}
+
+.secao-intro{
+    background: #000000;
+    padding: 50px 0;
+}
+
+.titulo-intro{
+    margin: 50px 0;
+}
+
+.imagens-intro{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-secundaria{
+    width: 25%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.img-principal{
+    width: 40%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.img-secundaria:hover, .img-principal:hover{
+    transform: scale(1.1);
+}
+
+.img-vader:hover{
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.img-luke:hover{
+    box-shadow: 0 0 10px #00ff00;
+}

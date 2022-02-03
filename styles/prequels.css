@@ -162,8 +162,10 @@ header{
 .img-final{
     width: 100%;
 }
-
 /* Fim sessão final */
+
+/* Iníco Segunda Trilogia */
+/* Fim segunda trilogia */
 
 @media screen and (max-width:620px) {
     .secao-intro{
@@ -191,5 +193,11 @@ header{
     }
     .final{
         padding: 50px 3%;
+    }
+
+    .estrela-morte{
+        width: 80%;
+        margin: 0 auto;
+        cursor: pointer;
     }
 }
